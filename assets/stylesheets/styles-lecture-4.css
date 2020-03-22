@@ -1,0 +1,175 @@
+/* CSS - Cascading Stylesheets */
+body {
+  font-family: Verdana, sans-serif;
+  width: 1200px;
+}
+
+header {
+  width: 100%;
+  height: 250px;
+  background-color: rgb(0, 51, 102); /* red, green and blue */
+  /*background-color: #003366; /* hexadecimal */
+  /*background-color: hsl(210, 100%, 20%); /* hue, situration and lightness */
+  text-align: center;
+  color: white;
+  /* font-family: "Segoe UI", Arial, sans-serif; */
+  font-family: monospace, monospace;
+  font-size: 130px;
+  letter-spacing: 5px;
+  padding-bottom: 50px;
+}
+
+section.a {
+  /*border: 1px solid lightgray;*/
+  display: block;
+  float: left;
+}
+
+div.a {
+  border: 1px solid lightgray;
+  width: 630px;
+  height: 300px;
+  padding: 10px;
+}
+
+div.b {
+  width: 330px;
+  height: 200px;
+  overflow: auto;
+}
+
+div.c {
+  border: 1px solid lightgray;
+  width: 630px;
+  padding: 10px;
+}
+
+span.a {
+  float: left;
+  width: 300px;
+  padding-left: 10px;
+}
+
+.smallHeaderWord {
+  font-size: 30px;
+  vertical-align: super;
+  letter-spacing: 0px;
+}
+
+.img1 {
+  width: 300px;
+  float: left;
+}
+
+.topVerticalAlign {
+  vertical-align: top;
+}
+
+.table1 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+}
+
+.table1 td {
+  height: 50px;
+}
+
+.tableRowStriped tbody tr:nth-child(odd) {
+    background-color: #f1f1f1
+}
+
+.tableWhite {
+  color: #000!important;
+  background-color: #fff!important
+}
+
+.blueText {
+  color: #2196F3!important;
+}
+
+.cyanText {
+  color: #00bcd4!important;
+}
+
+.limeText {
+  color: #cddc39!important;
+}
+
+.purpleText {
+  color: #9c27b0!important;
+}
+
+.amberText {
+  color: #ffc107!important;
+}
+
+.saddleBrownText {
+  color: saddlebrown!important;
+}
+
+.indigoText {
+  color: #3f51b5!important;
+}
+
+.deepOrangeText {
+  color: #ff5722!important;
+}
+
+.pinkText {
+  color: #e91e63!important;
+}
+
+.grayBlueText {
+  color: #607d8b!important;
+}
+
+.greenText {
+  color: #4CAF50!important;
+}
+
+.khakiText {
+  color: #f0e68c!important;
+}
+
+.deepPurpleText {
+  color: #673ab7!important;
+}
+
+.redText {
+  color: red!important;
+}
+
+.tealText {
+  color: #009688!important;
+}
+
+.orangeText {
+  color: #ff9800!important;
+}
+
+.iconSize {
+  font-size: 30px!important;
+}
+
+.quote {
+  font-family: cursive, fantasy;
+  font-size: 28px;
+  letter-spacing: 3px;
+}
+
+.textAlignRight {
+  text-align: right;
+  font-size: 25px;
+}
+
+#topSpace {
+  margin-top: 40px;
+}
+
+#logTable {
+  margin-top: 10px;
+  height: 300px;
+  overflow: auto;
+}
