@@ -1,0 +1,332 @@
+/* CSS - Cascading Stylesheets */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff2cc; /* hexadecimal */
+  font-family: Verdana, sans-serif;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  text-align: left;
+  color: #34344c;
+  font-size: 60px;
+  letter-spacing: 0px;
+  padding: 30px;
+
+}
+
+.smallHeaderWord-a {
+  color: #66cc00;
+  font-size: 30px;
+}
+
+.smallHeaderWord-b {
+  color: #ff4000;
+  font-size: 30px;
+}
+
+.iconSize {
+  font-size: 80px!important;
+}
+
+.greenText {
+  color: #66cc00!important;
+}
+
+.logo {
+  color: #00b300!important;
+  font-size: 80px!important;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.p-1 {
+  font-size: small;
+  color: gray;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  font-family: Arial;
+  width: 100%
+}
+
+/* Center text */
+.imageTextBlock {
+  position: absolute;
+  bottom: 100px; /* 1440 */
+  left: 600px;  /* 1440 */
+  background-color: black;
+  opacity: 0.5;
+  color: #f1f1f1;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width:1440px) and (min-width:1233px) {
+  .imageTextBlock {
+    bottom: 100px;
+    left: 600px;
+  }
+}
+
+@media (max-width:1232px) and (min-width:1050px) {
+  .imageTextBlock {
+    left:500px;
+  }
+}
+
+@media (max-width:1049px) and (min-width:769px) {
+  .imageTextBlock {
+    bottom: 50px;
+    left: 400px;
+    font-size: smaller;
+  }
+
+  header {
+    font-size: 55px;
+  }
+}
+
+@media (max-width:768px) and (min-width:426px) {
+  .imageTextBlock {
+    bottom: 20px;
+    left: 280px;
+    font-size: smaller;
+  }
+}
+
+@media (max-width:425px) {
+  .imageTextBlock {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 3px 20px;
+  }
+
+  .smallHeaderWord-a {
+    font-size: 22px;
+  }
+
+  header {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width:320px) {
+  .imageTextBlock {
+    /* the CSS defined in "@media only screen and (max-width:425px)"
+       will be applied here because (max-width: 320px) is smaller than (max-width:425px);
+    */
+    font-size: smaller;
+  }
+
+  .smallHeaderWord-a {
+    font-size: 18px;
+  }
+
+  header {
+    font-size: 25px;
+  }
+
+  .smallHeaderWord-b {
+    font-size: 18px;
+  }
+}
+
+.description {
+  float: left;
+  width: 58%;
+}
+
+.dishInfo {
+  float: left;
+  width: 42%
+}
+
+.infoItem {
+  float: left;
+  width: 25%
+}
+
+.infoBlock {
+  border-left: 1px solid lightgray;
+  padding: 0 3px;
+  text-align: center;
+  line-height: 2.3;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .description,
+  .dishInfo {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .infoItem {
+    width: 100%;
+  }
+  .infoBlock {
+    border-left: none;
+    border-top: 1px solid lightgray;
+  }
+}
+
+.col,
+.half,
+.third,
+.twothird,
+.threequarter,
+.quarter {
+    float: left;
+    width: 100%
+}
+
+.col.s1 {
+    width: 8.33333%
+}
+
+.col.s2 {
+    width: 16.66666%
+}
+
+.col.s3 {
+    width: 24.99999%
+}
+
+.col.s4 {
+    width: 33.33333%
+}
+
+.col.s5 {
+    width: 41.66666%
+}
+
+.col.s6 {
+    width: 49.99999%
+}
+
+.col.s7 {
+    width: 58.33333%
+}
+
+.col.s8 {
+    width: 66.66666%
+}
+
+.col.s9 {
+    width: 74.99999%
+}
+
+.col.s10 {
+    width: 83.33333%
+}
+
+.col.s11 {
+    width: 91.66666%
+}
+
+.col.s12 {
+    width: 99.99999%
+}
+
+@media (min-width:601px) {
+    .col.m1 {
+        width: 8.33333%
+    }
+    .col.m2 {
+        width: 16.66666%
+    }
+    .col.m3,
+    .quarter {
+        width: 24.99999%
+    }
+    .col.m4,
+    .third {
+        width: 33.33333%
+    }
+    .col.m5 {
+        width: 41.66666%
+    }
+    .col.m6,
+    .half {
+        width: 49.99999%
+    }
+    .col.m7 {
+        width: 58.33333%
+    }
+    .col.m8,
+    .twothird {
+        width: 66.66666%
+    }
+    .col.m9,
+    .threequarter {
+        width: 74.99999%
+    }
+    .col.m10 {
+        width: 83.33333%
+    }
+    .col.m11 {
+        width: 91.66666%
+    }
+    .col.m12 {
+        width: 99.99999%
+    }
+}
+
+@media (min-width:993px) {
+    .col.l1 {
+        width: 8.33333%
+    }
+    .col.l2 {
+        width: 16.66666%
+    }
+    .col.l3 {
+        width: 24.99999%
+    }
+    .col.l4 {
+        width: 33.33333%
+    }
+    .col.l5 {
+        width: 41.66666%
+    }
+    .col.l6 {
+        width: 49.99999%
+    }
+    .col.l7 {
+        width: 58.33333%
+    }
+    .col.l8 {
+        width: 66.66666%
+    }
+    .col.l9 {
+        width: 74.99999%
+    }
+    .col.l10 {
+        width: 83.33333%
+    }
+    .col.l11 {
+        width: 91.66666%
+    }
+    .col.l12 {
+        width: 99.99999%
+    }
+}
