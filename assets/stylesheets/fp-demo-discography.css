@@ -1,0 +1,62 @@
+.discography{
+  display: block;
+  position: relative;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.discography-cover{
+  max-width: 275px;
+  max-height: 275px;
+  border-radius: 8px;
+  box-shadow: 0 45px 100px rgba(0, 0, 0, 0.4);
+  transition: all .3s ease-in-out; /* all -- transite both width and height*/
+}
+
+/* absolutely positioned elements can be made to fill the available vertical space
+  by specifying both top and bottom and leaving height unspecified (that is, auto).
+  They can likewise be made to fill the available horizontal space
+  by specifying both left and right and leaving width as auto.*/
+@media (min-width: 1024px){
+  .discography-cover{
+    position: absolute;
+    left: 0;
+  }
+}
+
+.discography-cover:hover{
+  max-width: 300px;
+  max-height: 300px;
+  box-shadow: 0 75px 175px rgba(0, 0, 0, 0.4);
+}
+
+ul.discography-details{
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 1024px){
+  ul.discography-details {
+    margin-left: 320px;
+  }
+}
+
+.discography-title{
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+ul.track-listings{
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+ul.track-listings > li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* evenly put space between elements */
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
