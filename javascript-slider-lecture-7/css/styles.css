@@ -1,0 +1,46 @@
+body {
+  background: bisque;
+}
+
+.container {
+    position: relative;
+}
+
+.avatar-image-female,
+.avatar-image-male {
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+.avatar-image-half-right {
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+.avatar-image-half-left {
+    position: absolute;
+    top: 0;
+    left: 300px;
+}
+
+.go-right {
+    position: absolute;
+    top: 240px;
+    left: 50px;
+    color: lightgray;
+    opacity: 50%;
+    font-size: 50px;
+    z-index: 3;
+}
+
+.go-left {
+    position: absolute;
+    top: 240px;
+    left: 500px;
+    color: lightgray;
+    opacity: 50%;
+    font-size: 50px;
+    z-index: 3;
+}

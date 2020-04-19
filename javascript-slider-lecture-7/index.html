@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Slider Demo</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- reference your stylesheet here -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <script src="./js/slider.js"></script>
+  </head>
+  <body>
+    <!-- TODO: put your webpage content here -->
+    <div class="container">
+      <img id="female-full" class="avatar-image-female" src="./images/avatar-f-full.png" alt="female avatar full image" />
+      <img id="male-full" class="avatar-image-male" src="./images/avatar-m-full.png" alt="male avatar full image" />
+      <img id="female-half" class="avatar-image-half-right" src="./images/avatar-f-half.png" alt="female avatar half image" />
+      <img id="male-half" class="avatar-image-half-left" src="./images/avatar-m-half.png" alt="male avatar half image" />
+      <div class="fa fa-mail-reply go-left" onmouseover="showAvatarMale()" onmouseout="showAvatarHalf()"></div>
+      <div class="fa fa-mail-forward go-right" onmouseover="showAvatarFemale()" onmouseout="showAvatarHalf()"></div>
+    </div>
+  </body>
+</html>
