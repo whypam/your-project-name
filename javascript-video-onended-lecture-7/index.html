@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video onended Demo</title>
+</head>
+<body style="background: beige;">
+
+<video id="videoContent" width="320" height="176" controls onended="myFunction()">
+  <source src="./videos/bee.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+<div id="otherContent" style="display:none;">
+  <h1 style="color: darkgreen;">Showing more contents after detecting video ended</h1>
+  <p style="color: cornflowerblue;">
+    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+  </p>
+</div>
+
+<script>
+  function myFunction() {
+    var vid = document.getElementById("videoContent");
+    vid.style.display = "none";
+    var div = document.getElementById("otherContent");
+    div.style.display = "block";
+  }
+</script>
+
+<p>Video courtesy of <a href="https://pixabay.com/videos/bee-cartoon-insect-animal-fly-32989/" target="_blank">pixabay user:julientromeur</a>.</p>
+
+</body>
+</html>
