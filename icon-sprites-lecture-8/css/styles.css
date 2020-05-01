@@ -1,0 +1,70 @@
+body {
+  background: cornflowerblue;
+}
+
+#socialList {
+  position: relative;
+}
+
+#socialList li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+}
+
+/*** Same as above ***
+#socialList span {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+}
+*** Same as above ***/
+
+#socialList li,
+#socialList a {
+  height: 188px;
+  display: block;
+}
+
+/*** Same as above ***
+#socialList span,
+#socialList a {
+  height: 188px;
+  display: block;
+}
+*** Same as above ***/
+
+#facebook {
+  left: 0px;
+  width: 165px;
+  background: url('../images/social-media-icons.png') -200px 0px;
+}
+
+#tweeter {
+  left: 165px;
+  width: 165px;
+  background: url('../images/social-media-icons.png') 0px -376px;
+}
+
+#instagram {
+  left: 330px;
+  width: 165px;
+  background: url('../images/social-media-icons.png') 0px -188px;
+}
+
+#youtube {
+  left: 495px;
+  width: 165px;
+  background: url('../images/social-media-icons.png') 0px 0px;
+}
+
+#pinterest {
+  left: 660px;
+  width: 165px;
+  background: url('../images/social-media-icons.png') -400px -376px;
+  /* background: url('../images/social-media-icons.png') 200px 188px; Same as above */
+}
