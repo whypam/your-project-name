@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Final Project for HTML5/CSS3 Course">
+    <meta name="keywords" content="HTML,CSS,JavaScript,jQuery">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript Filtering Demo</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/fp-demo-responsive-nav-bar.css" />
+    <script src="./assets/javascripts/fp-demo-responsive-nav-bar.js"></script>
+    
+    <!-- merch filter CSS and JavaScript -->
+    <!-- ./assets/stylesheets/fp-demo-merch-filter.css -->
+    <!-- ./assets/javascripts/fp-demo-merch-filter.js -->
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/fp-demo-merch-filter.css" />
+    <script src="./assets/javascripts/fp-demo-merch-filter.js"></script>
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Discography</a>
+        <a href="#">Media</a>
+        <a href="fp-demo-merch-filter-raw-lecture-8.html" class="active">Merch</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="fa icon" onclick="myFunction()">&#xf0c9;</a>
+    </div>
+
+<section class="filter-section">
+    <!-- Control buttons -->
+    <div id="btn-container">
+        <button class="btn active-b" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('dogs')"> Dogs</button>
+        <button class="btn" onclick="filterSelection('cats')"> Cats</button>
+        <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+        <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+        <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+    </div>
+
+    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+    <div class="container">
+        <div class="filter-div dogs animals">
+            <img class="merch-img" src="./assets/images/merch-filter/puppy-1-thumbnail.jpg" />
+        </div>
+        <div class="filter-div dogs animals">
+            <img class="merch-img" src="./assets/images/merch-filter/puppy-2-thumbnail.jpg" />
+        </div>
+        <div class="filter-div dogs animals">
+            <img class="merch-img" src="./assets/images/merch-filter/puppy-3-thumbnail.jpg" />
+        </div>
+        <div class="filter-div cats animals">
+            <img class="merch-img" src="./assets/images/merch-filter/kitten-1-thumbnail.jpg" />
+        </div>
+        <div class="filter-div other animals">
+            <img class="merch-img" src="./assets/images/merch-filter/other-1-thumbnail.jpg" />
+        </div>
+        <div class="filter-div other animals">
+            <img class="merch-img" src="./assets/images/merch-filter/other-2-thumbnail.jpg" />
+        </div>
+        <div class="filter-div fruits">
+            <img class="merch-img" src="./assets/images/merch-filter/bananas.jpg" />
+        </div>
+        <div class="filter-div fruits">
+            <img class="merch-img" src="./assets/images/merch-filter/berries.jpg" />
+        </div>
+        <div class="filter-div fruits">
+            <img class="merch-img" src="./assets/images/merch-filter/pears.jpg" />
+        </div>
+        <div class="filter-div fruits">
+            <img class="merch-img" src="./assets/images/merch-filter/strawberries.jpg" />
+        </div>
+    </div>
+</section>
+</body>
+<script>filterSelection("all");</script>
+</html>
